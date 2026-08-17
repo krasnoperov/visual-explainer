@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <title>Визуальное объяснение</title>
+  <style>
+    :root { color-scheme: light dark; --bg: light-dark(#eceef2,#111318); --paper: light-dark(#fcfcfa,#191c22); --ink: light-dark(#151820,#f2f3f5); --muted: light-dark(#5f6570,#aab0bb); --line: light-dark(#d7dae0,#383d47); --soft: light-dark(#f1f3f6,#22262e); --accent: light-dark(#2d56c7,#8eabff); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 15.5px/1.5 Verdana,ui-sans-serif,system-ui,sans-serif; }
+    main { width: min(100%,68rem); margin: 0 auto; background: var(--paper); }
+    header,section { padding: clamp(20px,4vw,44px); }
+    section { border-top: 1px solid var(--line); }
+    h1,h2 { margin: 0; font-family: "Iowan Old Style",Georgia,serif; font-weight: 600; letter-spacing: -.025em; }
+    h1 { max-width: 18ch; font-size: clamp(2rem,7vw,3.8rem); line-height: .98; }
+    h2 { max-width: 26ch; font-size: clamp(1.45rem,4.8vw,2.2rem); line-height: 1.05; }
+    p { max-width: 70ch; margin: 8px 0 0; }
+    .lede { color: var(--muted); font-size: clamp(1rem,3.7vw,1.17rem); }
+    .signals { margin-top: 20px; border-block: 1px solid var(--line); }
+    .signal { display: grid; grid-template-columns: minmax(5.5rem,.35fr) 1fr; gap: 12px; padding: 11px 0; }
+    .signal + .signal { border-top: 1px solid var(--line); }
+    .signal b { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; }
+    .signal span { color: var(--muted); }
+    .model { margin-top: 20px; border-top: 1px solid var(--line); }
+    .row { display: grid; grid-template-columns: 2rem 1fr; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .row i { color: var(--accent); font: 700 .82rem/1.5 ui-monospace,monospace; font-style: normal; }
+    .row p { margin-top: 3px; color: var(--muted); }
+    details { margin-top: 18px; border-block: 1px solid var(--line); }
+    summary { min-height: 48px; padding: 13px 0; cursor: pointer; font-weight: 700; }
+    code,pre { font-family: ui-monospace,SFMono-Regular,Consolas,monospace; }
+    pre { max-width: 100%; overflow: auto; margin: 0 0 16px; padding: 14px; background: var(--soft); font-size: .8rem; }
+    a:focus-visible,summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    @media (min-width:768px) { main { margin: 28px auto 56px; border: 1px solid var(--line); } .signals { display:grid; grid-template-columns:repeat(3,1fr); } .signal { display:block; padding:14px 20px; } .signal:first-child { padding-left:0; } .signal + .signal { border-top:0; border-left:1px solid var(--line); } .signal span { display:block; margin-top:4px; } .model { display:grid; grid-template-columns:repeat(3,1fr); } .row { display:block; padding:16px 20px; } .row:first-child { padding-left:0; } .row + .row { border-left:1px solid var(--line); } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { body { background:#fff; color:#111; } main { width:100%; margin:0; border:0; } header,section { break-inside:avoid; } }
+  </style>
+</head>
+<body><main>
+  <header>
+    <h1>Короткий вывод, плотное доказательство</h1>
+    <p class="lede">Сформулируйте вопрос и начните показывать полезную информацию до первого скролла.</p>
+    <div class="signals">
+      <div class="signal"><b>Факт</b><span>Проверенное состояние.</span></div>
+      <div class="signal"><b>Риск</b><span>Что меняет решение.</span></div>
+      <div class="signal"><b>Действие</b><span>Следующий полезный шаг.</span></div>
+    </div>
+  </header>
+  <section>
+    <h2>Форма показывает отношения</h2>
+    <div class="model">
+      <div class="row"><i>01</i><div><b>Вход</b><p>Конкретное событие или доказательство.</p></div></div>
+      <div class="row"><i>02</i><div><b>Изменение</b><p>Граница, причина или преобразование.</p></div></div>
+      <div class="row"><i>03</i><div><b>Выход</b><p>Проверяемый результат и потребитель.</p></div></div>
+    </div>
+    <details><summary>Исходные данные и длинные детали</summary><pre>Точные факты, команды, источники или выдержки.</pre></details>
+  </section>
+</main></body>
+</html>

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Visual Explainer"
+  short_description: "Turn dense explanations into visual HTML or video"
+  default_prompt: "Use $visual-explainer to turn this into a concise, evidence-backed mobile-first visual explanation, publish it, and return the private link. Add motion only when it materially improves understanding."
+
+policy:
+  allow_implicit_invocation: true
