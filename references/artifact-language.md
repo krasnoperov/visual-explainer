@@ -2,9 +2,10 @@
 
 ## Keep one language
 
-- Choose the artifact's primary language from the user's request, audience, and project conventions.
+- Default the artifact to US English. A chat message written in another language does not by itself change the artifact language.
+- Use another language only when the user explicitly requests it for the artifact or the named audience or project convention requires it.
 - Use it consistently for headings, prose, diagrams, controls, narration, and captions.
-- Default English artifacts to US English unless the project specifies another variant.
+- Use the project's English variant when it specifies one.
 - Preserve exact product names, API names, commands, paths, code identifiers, enum values, and UI labels. Do not use English verbs or connectors merely because the subject is technical.
 - Keep a quotation in its source language only when the exact wording is evidence; translate or explain it nearby when the reader needs that help.
 

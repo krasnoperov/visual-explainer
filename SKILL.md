@@ -13,7 +13,7 @@ Turn the full context of a complex Codex answer into an explanation the reader c
 2. Separate verified facts, inference, proposals, and unknowns. Keep evidence and caveats that can change the conclusion.
 3. Build one compact semantic model: claims, evidence, relationships, and the natural reasoning path. Use it as the source of truth for every renderer.
 4. Edit before styling. Remove setup, repetition, filler, generic transitions, and prose that only announces structure.
-5. Choose one primary language from the user's request and project context. Do not mix prose languages; preserve exact code, product, API, and UI identifiers. For English or multilingual source material, read `references/artifact-language.md`.
+5. Default the artifact to English. Use another language only when the user explicitly requests that artifact language or the named audience/project requires it; the language of the chat request alone does not override the default. Do not mix prose languages; preserve exact code, product, API, and UI identifiers. Read `references/artifact-language.md` for language guidance.
 6. Give each relationship a visual form that exposes it: timeline, convergence, fan-out, hierarchy, transformation, comparison, scale, ledger, annotated mechanism, state machine, or another meaningful geometry.
 
 ## Choose the medium
